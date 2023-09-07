@@ -18,15 +18,15 @@ Infine scrivi sulla pagina nomecognomecolorepreferito23
 
 
 const firstName = prompt('Inserici il tuo nome');
-if (firstName == " " || firstName == "  " || firstName == null) {
+if (firstName == " " || firstName == "  " || firstName.length <= 0) {
 	txt = "Attenzione! inserisci il dato richiesto!";
 } else {
 	const lastName = prompt('Inserici il tuo cognome');
-	if (lastName == " " || lastName == "  " || lastName == null){
+	if (lastName == " " || lastName == "  " || lastName.length <= 0){
 		txt = "Attenzione! inserisci il dato richiesto!";
 	} else {
 		const favColor = prompt('Inserici il tuo colore preferito');
-		if (favColor == " " || favColor == "  " || favColor == null){
+		if (favColor == " " || favColor == "  " || favColor.length <= 0){
 			txt = "Attenzione! inserisci il dato richiesto!";
 		} else{
 			const generatedPassword = ` La password generato per te è: "${firstName.toLowerCase().trim().replace(" ","")}${lastName.toLowerCase().trim().replace(" ","")}${favColor.toLowerCase().trim().replace(" ","")}23"
